@@ -1,4 +1,4 @@
-yum nfs-utils nfs-utils-lib install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
+yum install screen nfs-utils nfs-utils-lib autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
 
 mkdir ~/ffmpeg_sources
 cd ~/ffmpeg_sources
