@@ -1,4 +1,4 @@
-yum install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
+yum nfs-utils nfs-utils-lib install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
 
 mkdir ~/ffmpeg_sources
 cd ~/ffmpeg_sources
@@ -88,3 +88,9 @@ make
 make install
 make distclean
 hash -r
+
+mkdir -p /content
+mount -o nolock 192.168.1.2:/volume1/Content /content
+
+
+
